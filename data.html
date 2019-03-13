@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data and Networks: Data and Transmission</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/minty/bootstrap.min.css" rel="stylesheet" integrity="sha384-9NlqO4dP5KfioUGS568UFwM3lbWf3Uj3Qb7FBHuIuhLoDp3ZgAqPE1/MYLEBPZYM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary heading">
+      <a class="navbar-brand" href="index.html">Data and Networks</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="networks.html">Internet Networks</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="data.html">Data and Transmission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="security.html">Security</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bibliography.html">Bibliography</a>
+          </li>
+          </div>
+        </nav>
+      <br>
+
+      <div class="container-fluid">
+          <h1 class="text-center">Data Transmission Mediums</h1>
+          <p class="sec text-center">There are few different major ways to transmit data. Here are their pros and cons:</p>
+        <div class="row">
+          <div class="col-md col-lg">
+            <img src="SPS.jpg" class="animated slideInLeft img-fluid">
+            <h2>Copper Wire</h2>
+            <h3>Pros:</h3>
+            <ul class="sec">
+              <li>Less expensive than other options like fibre optic.</li>
+              <li>More suitable for rural areas because most areas already have copper wiring.</li>
+            </ul>
+            
+            <h3>Cons:</h3>
+            <ul class="sec">
+              <li>Slower data transmission rate than other options like fibre optic.</li>
+              <li>Uses electrons instead of photons; electrons travel at about 1% the speed of photons.</li>
+              <li>Has less bandwith than other options like fibre optic.</li>
+              <li>Is more brittle than fibre optic.</li>
+            </ul>
+            
+            <h2>Wireless</h2>
+            <h3>Pros:</h3>
+            <ul class="sec">
+              <li>Much less expensive than both copper and fibre optic wiring.</li>
+              <li>You don’t need to pay for installation or wire breakage.</li>
+            </ul>
+
+            <h3>Cons:</h3>
+            <ul class="sec">
+              <li>Wireless networks have low attenuation meaning signals get much weaker over distances compared to other options like fibre optic.</li>
+            </ul>
+            
+            
+          </div>
+          <div class="col-md col-lg">
+            <img src="fiber.jpg" class="animated slideInRight img-fluid">
+            <div class="small-change">
+              <h2>Fibre optic</h2>
+              <h3>Pros:</h3>
+              <ul class="sec">
+                <li>Faster data transmission rate than copper.</li>
+                <li>The photons in fibre optic cables travel at the speed of light, as opposed to the electrons in copper that travel less than 1% of the speed of light.</li>
+                <li>Fibre optic cable experiences less signal loss over long distances.
+                  While copper loses about 94 percent of its signal over 100 metres, fibre optic loses just 3%.
+                </li>
+                <li>Fibre optic cables are unaffected by electromagnetic interference.
+                  Unlike copper, fibre optic cables will not make electromagnetic currents that interfere with other wires because they do not conduct electricity unlike copper.
+                </li>
+                <li>Fibre optic cables are less brittle than copper so you have to replace them less than you do copper.
+                </li>
+              </ul>
+              <h3>Cons:</h3>
+              <ul class="sec">
+                <li>Can be expensive in rural areas that don't have wiring for fibre optic.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h1 class="text-center">Compression</h1>
+        <div class="row">
+          <div class="col-md col-lg">
+            <table class="table table-responsive table-bordered sec">
+              <thead class="thead-light">
+                <tr>
+                  <th>Advantages</th>
+                  <th>Disadvantages</th> 
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Decrease in size of the file which means less memory is used.</td>
+                  <td>There can be errors in transmission.</td> 
+                </tr>
+                <tr>
+                  <td>Increase in speed when reading or writing the file.</td>
+                  <td>Compressing reduces file quality.</td> 
+                </tr>
+                <tr>
+                  <td>Data transmission is much faster.</td>
+                  <td>A compressed file may contain a virus and your antivirus program may be unable to detect it.</td> 
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md col-lg">
+            <p class="sec">
+              Most data compression is lossless. Lossless compression uses either the LZ77 algorithm or the LZ78 algorithm. In lossless compression, no data is lost. This method of data compression reduces redundancy and simplifies data. It replaces duplicate text with a smaller key that represents the text. An example of this is having 3 instances of a word in a file but all with one different character:
+            </p>
+              <br>
+              <p class="myCode">“banana1” “banana2” “banana3”</p>
+              <br>
+              <p class="sec">
+                The LZ77/LZ78 algorithm would do something similar to this:
+              </p>
+              <br>
+              <p class="myCode">(b)1 (b)2 (b)3
+                KEY: (b) = banana</p>
+              <br>
+              <p class="sec">
+              When the data is uncompressed, all instances using a key will be replaced with the actual text, meaning no data is lost. 
+              Lossy compression on the other hand, is susceptible to data loss during compression. It is usually used in instances like music files or picture in which data loss won’t be very noticeable.
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+      </body>
+    </html>

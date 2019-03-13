@@ -1,0 +1,45 @@
+h1, h2, h3, h4{ 
+  font-family: "Montserrat";
+}
+
+.myCode {
+  font-family: "Inconsolata";
+  color: black;
+  font-size: 3em;
+  background-color: #DCDCDC
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+.heading {
+  font-family: "Montserrat";
+}
+
+.heading2 {
+  font-family: "Montserrat";
+  font-size: 35px;
+}
+
+.sec {
+  font-family: "Lato";
+  font-size: 24px;
+
+
+.internet-pic{
+  margin-top: 0.2em;
+}
+

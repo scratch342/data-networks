@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data and Networks: Security</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/minty/bootstrap.min.css" rel="stylesheet" integrity="sha384-9NlqO4dP5KfioUGS568UFwM3lbWf3Uj3Qb7FBHuIuhLoDp3ZgAqPE1/MYLEBPZYM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary heading">
+      <a class="navbar-brand" href="index.html">Data and Networks</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="networks.html">Internet Networks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data and Transmission</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="security.html">Security</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bibliography.html">Bibliography</a>
+          </li>
+
+          </div>
+        </nav>
+      <br>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md col-lg">
+            <h1>Top 5 tips on protecting yourself online</h1>
+            <img class="img-fluid" src="internet-security.jpg">
+            <ol class="sec">
+              <li class="heading2"><h2>Use effective passwords as much as possible and do not use the same password.</h2></li>
+              <p>Try to use letters, numbers and symbols in your passwords to make them harder to guess.</p>
+              <li class="heading2"><h2>Use antivirus programs to protect yourself from viruses.</h2></li>
+              <p>There are many antivirus programs, some are paid some are free.</p>
+              <li class="heading2"><h2>Turn off third party cookies.</h2></li>
+              <p>This is how advertisers access information about you.</p>
+              <li class="heading2"><h2>Do not share personal information on the internet.</h2></li>
+              <p>This includes your name, number, banking details and address.</p>
+              <li class="heading2"><h2>Try to stay away from public networks.</h2></li>
+              <p>You don't know who's watching you on public networks.</p>
+            </ol>
+          </div>
+          <div class="col-md col-lg">
+            <h1>What responsibilities do developers have in data security?</h1>
+            <p class="sec">When getting data from users and sending it, web developers in particular need to use POST requests in HTML forms when manipulating user data as opposed to GET requests. GET requests should never be used in regards to getting and sending personal data to servers. POST requests are much safer than GET requests and protect the user data better.</p>
+            <table class="table table-responsive table-bordered sec">
+              <thead class="thead-light">
+                <tr>
+                  <th>GET requests</th>
+                  <th>POST requests</th> 
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Can be cached.</td>
+                  <td>Are never cached.</td> 
+                </tr>
+                <tr>
+                  <td>Remain in browser history.</td>
+                  <td>Do not remain in browser history.</td> 
+                </tr>
+                <tr>
+                  <td>Display personal data in URL.</td>
+                  <td>Do not display personal data in URL.</td> 
+                </tr>
+                <tr>
+                  <td>Can be bookmarked.</td>
+                  <td>Cannot be bookmarked.</td> 
+                </tr>
+                <tr>
+                  <td>Have length restrictions.</td>
+                  <td>Do not have length restrictions.</td> 
+                </tr>
+              </tbody>
+            </table>
+            <p class="sec">Web application developers should also use asterisks when displaying passwords instead of the actual letters, numbers and symbols.
+              When storing passwords in server databases, an algorithm should be used to turn passwords into hashes when storing to increase security. There should also be an algorithm for reversing the hash back into the original password when needed.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      </body>
+    </html>
